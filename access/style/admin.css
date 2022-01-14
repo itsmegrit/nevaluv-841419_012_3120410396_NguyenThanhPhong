@@ -1,0 +1,582 @@
+body {
+    box-sizing: border-box;
+}
+
+#header,
+#footer {
+    padding: 20px;
+    font-size: 14px;
+    background: #ddd;
+}
+
+#wp-content {
+    display: flex;
+    min-height: 800px;
+}
+
+.left {
+    width: 10%;
+    font-size: 14px;
+    padding: 20px 20px 0px 0px;
+}
+
+.content {
+    width: 72%;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.right {
+    width: 18%;
+    font-size: 14px;
+    padding: 20px 0px 0px 20px;
+}
+
+ul.list-item {
+    list-style: none;
+}
+
+ul.list-item li {
+    padding: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+ul.list-item a {
+    text-decoration: none;
+}
+
+ul.list-item a li {
+    color: black;
+}
+
+ul.list-item li:hover {
+    background: blanchedalmond;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* thêm sản phẩm */
+
+.right h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.right #searchproductslow {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.right .btn-search {
+    background: #f5023f;
+    color: #fff;
+    border: none;
+    width: 80%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.right .btn-search:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.right .btn-searchproduct {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.right .btn-searchproduct:hover {
+    background-color: red;
+    color: white;
+}
+
+.form-add input,
+.form-add textarea,
+.addtype input,
+.form-add select {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    width: 80%;
+}
+
+.form-add input.btn-add,
+.addtype input.btn-add {
+    border-radius: 4px;
+    background-color: #f5023f;
+    padding: 10px;
+    border: none;
+    color: #f7f7f7;
+}
+
+.addtype input.btn-add:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.form-add input.btn-add:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.form-add input[type="file"] {
+    padding-left: 0px;
+}
+
+
+/* / danh muc san pham */
+
+#listtype ul.list_type {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#listtype ul.list_type li {
+    padding: 10px;
+    border: 1px solid black;
+    margin-right: 2px;
+}
+
+#listtype ul.list_type li:hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+
+
+/* bang san pham */
+
+.content .tbl-product {
+    width: 100%;
+}
+
+.content .tbl-product tr th {
+    width: 16.6%;
+    padding: 20px;
+}
+
+.content .tbl-product thead {
+    background-color: #ddd;
+}
+
+.content .tbl-product tbody tr td img {
+    width: 100%;
+    height: 140px;
+}
+
+.content .tbl-product tbody tr td {
+    text-align: center;
+}
+
+
+/* bảng khách hàng */
+
+.content .listuser {
+    width: 100%;
+}
+
+.content .listuser tr th {
+    width: 16.6%;
+    padding: 20px;
+}
+
+.content .listuser thead {
+    background-color: #ddd;
+}
+
+.content .listuser tbody tr {
+    height: 40px;
+    width: 100%;
+}
+
+.content .listuser tbody tr td {
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 20%;
+}
+
+
+/* trang chu */
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* thanh phan trang */
+
+.content #paginate {
+    text-align: center;
+}
+
+.content #paginate ul.paginate {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.content #paginate ul.paginate li {
+    border-radius: 4px;
+    padding: 8px 12px;
+    background: red;
+    color: white;
+}
+
+.content #paginate ul.paginate li:not(first-child) {
+    margin-left: 12px;
+}
+
+.content #paginate ul.paginate li:hover {
+    cursor: pointer;
+    background: yellow;
+    color: black;
+}
+
+
+/* form update sản phẩm */
+
+#update {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 20;
+    margin: auto;
+    display: none;
+    padding: auto;
+}
+
+.hien {
+    display: block !important;
+}
+
+.none {
+    display: none !important;
+}
+
+#update .formupdate {
+    padding: 20px;
+    margin: auto;
+    margin-top: 5%;
+    min-height: 10%;
+    background-color: red;
+    border-radius: 4px;
+    width: 50%;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 50px rgb(0 0 0 / 25%);
+    animation: authFormShow ease-out 280ms;
+    /* display: none; */
+}
+
+#update .formupdate .head h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#update .formupdate .head i {
+    font-size: 25px;
+}
+
+#update .formupdate .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#update .formupdate input,
+#update .formupdate textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#update .formupdate label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#update .formupdate input.btn-add {
+    border: none;
+    padding: 20px;
+}
+
+#update .formupdate input.btn-add:hover {
+    background-color: red;
+    color: white;
+}
+
+#update .formupdate img {
+    width: 20%;
+    height: auto;
+}
+
+.content .thongke thead tr th {
+    background-color: #ddd;
+    padding: 10px;
+    width: 9%;
+}
+
+.content .thongke tbody tr td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+
+/* // showw đơn hàng */
+
+#detailCart {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#detailCart .cart {
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 4.5%;
+    min-height: 10%;
+    width: 50%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.24);
+}
+
+#detailCart .cart #listproductcart table {
+    width: 100%;
+    font-size: 14px;
+}
+
+#detailCart .cart #listproductcart .sum {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+#detailCart .cart #listproductcart table thead tr th {
+    padding: 10px;
+    background: #ddd;
+    width: 30%;
+}
+
+#detailCart .cart #listproductcart table thead tr:hover {
+    cursor: pointer;
+}
+
+#detailCart .cart #listproductcart table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+#detailCart .cart #listproductcart table tbody tr td {
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px;
+}
+
+.order-detail-btn {}
+
+.order-detail-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+/* // thêm thành viên */
+
+.form-add-user h1 {
+    margin-bottom: 10px;
+}
+
+.form-add-user input#search {
+    margin-top: 10px;
+}
+
+.form-add-user input.btn-search {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+}
+
+.form-add-user input.btn-search:hover {
+    background-color: red;
+    color: white;
+}
+
+.form-add-user input,
+.form-add-user label {
+    padding: 10px;
+    display: block;
+    width: 80%;
+}
+
+.form-add-user .btn-add-user {
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.form-add-user .btn-add-user:hover {
+    background-color: red;
+    color: white;
+}
+
+
+/* // cập nhật thông tin user */
+
+#updateuser {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+}
+
+#updateuser .formupdate {
+    margin: auto;
+    margin-left: 21%;
+    background-color: #fff;
+    margin-top: 4.5%;
+    width: 50%;
+    min-height: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 14px;
+    animation: authFormShow ease-out 280ms;
+}
+
+#updateuser .formupdate .head {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#updateuser .formupdate .head i {
+    font-size: 25px;
+}
+
+#updateuser .formupdate input,
+#updateuser .formupdate label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+#updateuser .formupdate .btn-update {
+    border: none;
+    padding: 10px;
+    margin-top: 27px;
+    display: block;
+}
+
+#updateuser .formupdate .btn-update:hover {
+    background: red;
+    color: white;
+}
+
+.showformupdateuser {
+    display: block !important;
+}
+
+#formseacrch .search,
+#formsearchproduct .seacrchproduct {
+    padding: 10px;
+}
+
+#formseacrch,
+#formsearchproduct {
+    position: relative;
+    margin-left: 182px;
+}
+
+#formseacrch i,
+#formsearchproduct i {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+}
+
+#header {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+/* // trạng thái đơn hàng */
+
+#listproductcart .statuscart {
+    padding: 20px;
+}
+
+#listproductcart .statuscart label,
+#listproductcart .statuscart input,
+#listproductcart .statuscart select {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#listproductcart .statuscart .btn-update {
+    padding: 10px;
+    display: block;
+    border: none;
+    margin-top: 10px;
+    background-color: #da4469;
+    color: #000;
+    border-radius: 4px;
+    transition: all linear 200ms;
+}
+
+#listproductcart .statuscart .btn-update:hover {
+    background-color: #ff0000;
+    color: #000;
+}
+
+#logout {
+    font-size: 14px;
+}
+
+#logout:hover {
+    cursor: pointer;
+}
+
+.order-detail-close-btn {
+    border-radius: 4px;
+    color: #fff;
+    background-color: #f5023f !important;
+}
+
+.order-detail-close-btn:hover {
+    opacity: 0.8;
+}
+
+.order-detail-table {
+    border: 1px solid var(--border-color);
+}
